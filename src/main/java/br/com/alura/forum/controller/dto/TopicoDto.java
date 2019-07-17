@@ -23,6 +23,10 @@ public class TopicoDto {
         return topicos.stream().map(t -> new TopicoDto(t)).collect(Collectors.toList());
     }
 
+    public static TopicoDto converter(Topico topico) {
+        return new TopicoDto(topico);
+    }
+
     public Long getId() {
         return id;
     }
